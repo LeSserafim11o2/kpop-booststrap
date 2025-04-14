@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nmixx Fanpage</title>
+    <link rel="icon" href="./Nmixx/NmixxLogo.jpg" type="icon/jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"/>
+    <style>
+        html {
+            user-select: none;
+        }
+        p {
+            line-height: 1.6;
+        }
+        #nmixx-carousel .carousel-item img {
+            width: 100%;
+            height: 1000px;
+            object-fit: cover;
+        }
+        .media-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        iframe {
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+            height: 650px;
+        }
+        .card-body img {
+            width: 100%;
+            height: 900px;
+            object-fit: cover;
+            border: 5px solid black;
+            border-radius: 20px;
+        }
+        #videos, #media, #more {
+            padding-top: 70px;
+        }
+        @media (max-width: 576px) {
+            #nmixx-carousel .carousel-item img {
+                height: 250px;
+            }
+            .carousel-item .carousel-caption {
+                display: none;
+            }
+            .card-body img {
+                height: 400px;
+            }
+        }
+        @media (max-width: 768px) and (min-width: 577px) {
+            #nmixx-carousel .carousel-item img {
+                height: 400px;
+            }
+            .card-body img {
+                height: 700px;
+            }
+        }
+        @media (min-width: 769px) and (max-width: 992px) {
+            #nmixx-carousel .carousel-item img {
+                height: 550px;
+            }
+            .card-body img {
+                height: 580px;
+            }
+        }
+        @media (min-width: 993px) and (max-width: 1200px) {
+            #nmixx-carousel .carousel-item img {
+                height: 700px;
+            }
+            .card-body img {
+                height: 700px;
+            }
+        }
+        @media (min-width: 1201px) and (max-width: 1500px) {
+            #nmixx-carousel .carousel-item img {
+                height: 850px;
+            }
+            .card-body img {
+                height: 800px;
+            }
+        }
+    </style>
+</head>
+<body data-bs-theme="light">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md text-bg-info d-flex justify-content-around fixed-top">
+        <span class="navbar-brand fst-italic fw-bolder ms-3">Nmixx</span>
+        <button class="navbar-toggler mb-1 me-3" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <button id="themeToggle" class="btn btn-dark">Dark Mode</button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item mx-2 mb-1 rounded p-1">
+                    <a class="nav-link fw-bold" href="index.html">Home</a>
+                </li>
+                <li class="nav-item mx-2 mb-1 rounded p-1">
+                    <a class="nav-link fw-bold" href="#about">About</a>
+                </li>
+                <li class="nav-item mx-2 mb-1 rounded p-1 dropdown">
+                    <a class="nav-link fw-bold dropdown-toggle" href="#members" data-bs-toggle="dropdown">Members</a>
+                    <ul class="dropdown-menu" data-bs-theme="dark">
+                        <li><a class="dropdown-item" href="#lily">Lily Jinpark Morrow</a></li>
+                        <li><a class="dropdown-item" href="#haewon">Oh Haewon</a></li>
+                        <li><a class="dropdown-item" href="#bae">Bae Jinsol</a></li>
+                        <li><a class="dropdown-item" href="#sullyoon">Seol Yoona</a></li>
+                        <li><a class="dropdown-item" href="#jiwoo">Kim Jiwoo</a></li>
+                        <li><a class="dropdown-item" href="#kyujin">Jang Kyujin</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item mx-2 mb-1 rounded p-1">
+                    <a class="nav-link fw-bold" href="#songs">Songs</a>
+                </li>
+                <li class="nav-item mx-2 mb-1 rounded p-1">
+                    <a class="nav-link fw-bold" href="#images">Images</a>
+                </li>
+                <li class="nav-item mx-2 mb-1 rounded p-1">
+                    <a class="nav-link fw-bold" href="#videos">Videos</a>
+                </li>
+                <li class="nav-item mx-2 mb-1 rounded p-1">
+                    <a class="nav-link fw-bold" href="#media">Media</a>
+                </li>
+                <li class="nav-item mx-2 mb-1 rounded p-1">
+                    <a class="nav-link fw-bold" href="#more">More</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- About Nmixx -->
+    <section id="about" class="my-5 mx-3 pt-1">
+        <!-- Nmixx Wikipedia -->
+        <h1 class="text-center pt-4 mt-5 fw-bold"><a href="https://en.wikipedia.org/wiki/Nmixx" class="text-decoration-none text-muted" data-bs-toggle="tooltip" title="Nmixx Wikipedia" data-bs-placement="bottom">Nmixx - JYP's Generation 4 Group</a></h1>
+        <!-- Nmixx Carousel -->
+        <div id="nmixx-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators d-none d-md-flex">
+                <button type="button" data-bs-target="#nmixx-carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#nmixx-carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#nmixx-carousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#nmixx-carousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#nmixx-carousel" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#nmixx-carousel" data-bs-slide-to="5"></button>
+            </div>
+            <div class="carousel-inner container-fluid">
+                <div class="carousel-item active">
+                    <img src="./Nmixx/NmixxSlide1.jpg" alt="Nmixx" class="d-block">
+                    <div class="carousel-caption text-bg-dark">
+                        <h3>Nmixx in Japan</h3>
+                        <p>We had such a great time in Japan!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Nmixx/NmixxSlide2.jpg" alt="Nmixx" class="d-block">
+                    <div class="carousel-caption text-bg-dark">
+                        <h3>Nmixx in Seoul</h3>
+                        <p>We had such a great time in Seoul!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Nmixx/NmixxSlide3.jpg" alt="Nmixx" class="d-block">
+                    <div class="carousel-caption text-bg-dark">
+                        <h3>Nmixx in Your Area</h3>
+                        <p>We had such a great time in your life</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Nmixx/NmixxSlide4.jpg" alt="Nmixx" class="d-block">
+                    <div class="carousel-caption text-bg-dark">
+                        <h3>Nmixx</h3>
+                        <p>We know you are my sunshine</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Nmixx/NmixxSlide5.jpg" alt="Nmixx" class="d-block">
+                    <div class="carousel-caption text-bg-dark">
+                        <h3>Nmixx</h3>
+                        <p>We do all the best things for you all!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Nmixx/NmixxSlide6.jpg" alt="Nmixx" class="d-block">
+                    <div class="carousel-caption text-bg-dark">
+                        <h3>Nmixx Love</h3>
+                        <p>Support us and we can love each other!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#nmixx-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark text-light p-2 fw-bold"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#nmixx-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark text-light p-2 fw-bold"></span>
+            </button>
+        </div>
+        <!-- Nmixx Infomation/ Accordion -->
+        <p class="h2 fst-italic fw-bold my-3">
+            <span class="mark">Nmixx</span> (Korean: 엔믹스; RR: Enmikseu; MR: Enmiksŭ, stylized in all caps) is a South Korean girl group formed by SQU4D, a sub-label of JYP Entertainment. The group is composed of six
+             members: Lily, Haewon, Sullyoon, Bae, Jiwoo, and Kyujin. Originally a seven-piece group, Jinni departed from the lineup on December 9, 2022, for personal reasons. They debuted on 
+             February 22, 2022, with the single album Ad Mare.
+        </p>
+        <div id="accordion" class="container-md">
+            <!-- Original Name -->
+            <div class="accordion-item">
+                <h3 class="accordion-header my-2">
+                    <button href="#collapseOne" class="btn btn-info w-100 p-3 text-start border-0 rounded-pill" data-bs-toggle="collapse"><span class="h3">Original Name</span></button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                    <div class="accordion-body text-bg-success p-4 rounded-4">
+                        <p class="lead">The name Nmixx combines the letter "N", which stands for "now", "new", "next", and the unknown "n", and the word "mix", which symbolizes combination and diversity, altogether meaning "the best combination for a new era".</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 2021 - 2022 -->
+            <div class="accordion-item">
+                <h3 class="accordion-header my-2">
+                    <button href="#collapseTwo" class="btn btn-info w-100 p-3 text-start border-0 rounded-pill" data-bs-toggle="collapse"><span class="h3">2021 - 2022: Debut and Jinni's departure</span></button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                    <div class="accordion-body text-bg-success p-4 rounded-4">
+                        <p class="lead">
+                            On July 9, 2021, JYP Entertainment announced a new girl group would be debuting in February 2022, its first since Itzy in 2019. From July 16 to 25, JYP 
+                            Entertainment made pre-orders available for a limited edition of the group's debut package, titled Blind Package, which included the group's debut album and 
+                            album-related materials. The members were revealed through various dance videos and song covers from August 6 to November 19 (in order: Jinni, Jiwoo, Kyujin, 
+                            Sullyoon, Bae, Haewon, and Lily).
+                        </p>
+                        <p class="lead">
+                            On January 26, 2022, JYP Entertainment announced the group's name to be Nmixx, until then tentatively called JYPn. On February 2, it was announced that they would 
+                            debut on February 22 with the release of Ad Mare. On February 18, 2022, JYP Entertainment announced that the group's debut showcase, originally scheduled for 
+                            February 22, would be postponed to March 1 after group member Bae tested positive for COVID-19. Nmixx collaborated with the DreamWorks Animation's Gabby's 
+                            Dollhouse to release the Korean version of "Hey Gabby!", alongside the B-side "Sprinkle Party", on May 2. They also participated in Project Ribbon's Summer 
+                            Vacation Project, along with Fromis 9 and Oh My Girl Banhana, to cover Rainbow's "Kiss", from their 2009 debut EP Gossip Girl. The song was released on July 31.
+                        </p>
+                        <p class="lead">
+                            On September 19, Nmixx released their second single album Entwurf alongside the lead single "Dice". The group released their first "Intermixxion" single (described 
+                            by JYP as a special track dropped as a standalone track inbetween official releases) and first Christmas song, "Funky Glitter Christmas", on November 23. On December 
+                            9, JYP Entertainment announced that Jinni had terminated her contract with the company due to personal reasons, and had departed from the group, while Nmixx would 
+                            continue as a six-member ensemble.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 2023 - present -->
+            <div class="accordion-item">
+                <h3 class="accordion-header my-2">
+                    <button href="#collapseThree" class="btn btn-info w-100 p-3 text-start border-0 rounded-pill" data-bs-toggle="collapse"><span class="h3">2023 - present: Extended plays, showcase tour and fan concerts</span></button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                    <div class="accordion-body text-bg-success p-4 rounded-4">
+                        <p class="lead">
+                            On March 20, 2023, Nmixx released their first extended play Expérgo, with the title track "Love Me Like This". They embarked on the Nice to Mixx You Showcase Tour, 
+                            consisting of 13 dates across the United States and Asia, beginning in May. On May 31, it was reported that JYP Entertainment has expanded their partnership with 
+                            Republic Records to include Nmixx, along with Xdinary Heroes, in their strategic label deal, which previously included Twice, Itzy and Stray Kids. On July 11, 2023, 
+                            Nmixx released their third single album A Midsummer Nmixx's Dream, which consists of four tracks, including the pre-release track "Roller Coaster", and the title 
+                            track "Party O'Clock" written and composed by J. Y. Park. On August 20, JYP Entertainment announced that Nmixx would be holding their first fan concert Nmixx Change 
+                            Up: Mixx University, on October 7 and 8 at the Jangchung Arena in Seoul. The group went on to hold the fan concert abroad at Hong Kong, Taipei and Macau in 2024.
+                        </p>
+                        <p class="lead">
+                            On January 15, 2024, Nmixx released their second extended play Fe3O4: Break, with the pre-release track "Soñar (Breaker)" and the title track "Dash". On July 17, JYP 
+                            Entertainment announced that the group would be holding their second fan concert Nmixx Change Up: Mixx Lab, from October 4 to 6 at the Jangchung Arena in Seoul. 
+                            Nmixx's third extended play Fe3O4: Stick Out was released on August 19, with the title track "See That?". On October 11, the group released the Spanish version of 
+                            "Soñar".
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Members Nmixx -->
+    <section id="members" class="container-fluid d-flex flex-wrap justify-content-around align-items-stretch">
+        <!-- Lily Part -->
+        <div id="lily" class="col-sm-12 col-md-6 col-xxl-4 text-center shadow-lg mb-2" data-bs-toggle="modal" data-bs-target="#lilyModal">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Lily</h2>
+                    <p class="card-title">Main Vocalist</p>
+                </div>
+                <div class="card-body">
+                    <img src="./Nmixx/Lily.jpg" alt="Lily" class="card-img-top">
+                    <p class="card-text">October 17th, 2002</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://kprofiles.com/lily-nmixx-profile/" class="btn btn-info">See More Lily</a>
+                </div>
+            </div>
+        </div>
+        <!-- Lily Modal -->
+        <div class="modal fade" id="lilyModal">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header d-flex flex-column">
+                        <button type="button" class="btn-close btn" data-bs-dismiss="modal"></button>
+                        <p class="modal-title h1 my-2">Lily Nmixx</p>
+                        <img src="./Nmixx/Lily2.jpg" alt="Lily Avatar" class="rounded-circle" style="height: 250px; width: 250px; object-fit: cover;">
+                    </div>
+                    <div class="modal-body">
+                        <p class="fw-bold fst-italic h3">Lily Jin Park Morrow is a South Korean-Australian singer-songwriter, dancer, and actress under JYP Entertainment. She is the oldest member of the girl group NMIXX.</p>
+                        <p class="fw-bold fst-italic h3">In 2015 Lily participated in the fourth season of the reality show "K-pop Star" finishing in fourth place and signing a contract with JYP Entertainment.</p>
+                        <p class="fw-bold fst-italic h3">Lily debuted as a member of NMIXX on February 22, 2022.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <table class="table table-striped table-bordered table-dark">
+                            <tr>
+                                <th>Real Name</th>
+                                <th>Height</th>
+                                <th>National</th>
+                                <th>Training Period</th>
+                                <th>Favourite Color</th>
+                            </tr>
+                            <tr>
+                                <td>Lily Jin Park Morrow</td>
+                                <td>163 cm</td>
+                                <td>Korea, Australia</td>
+                                <td>6 years, 6 months</td>
+                                <td>Baby Blue</td>
+                            </tr>
+                        </table>
+                        <a href="https://kpopping.com/profiles/idol/Lily3" class="btn btn-primary d-block mx-auto text-uppercase">Lily More...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Haewon Part -->
+        <div id="haewon" class="col-sm-12 col-md-6 col-xxl-4 text-center shadow-lg mb-2" data-bs-toggle="modal" data-bs-target="#haewonModal">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Haewon</h2>
+                    <p class="card-title">Leader, Main Vocalist</p>
+                </div>
+                <div class="card-body">
+                    <img src="./Nmixx/Haewon.jpg" alt="Haewon" class="card-img-top">
+                    <p class="card-text">February 25th, 2003</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://kprofiles.com/haewon-nmixx-profile/" class="btn btn-info">See More Haewon</a>
+                </div>
+            </div>
+        </div>
+        <!-- Haewon Modal -->
+        <div class="modal fade" id="haewonModal">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header d-flex flex-column">
+                        <button type="button" class="btn-close btn" data-bs-dismiss="modal"></button>
+                        <p class="modal-title h1 my-2">Haewon Nmixx</p>
+                        <img src="./Nmixx/Haewon2.jpg" alt="Haewon Avatar" class="rounded-circle" style="height: 250px; width: 250px; object-fit: cover;">
+                    </div>
+                    <div class="modal-body">
+                        <p class="fw-bold fst-italic h3">Oh Haewon is a South Korean singer and dancer under JYP Entertainment. She is best known as the leader of the girl group NMIXX.</p>
+                        <p class="fw-bold fst-italic h3">She made her official debut on February 22, 2022, as the leader of NMIXX with their debut album "AD MARE".</p>
+                    </div>
+                    <div class="modal-footer">
+                        <table class="table table-striped table-bordered table-dark">
+                            <tr>
+                                <th>Real Name</th>
+                                <th>Height</th>
+                                <th>National</th>
+                                <th>Training Period</th>
+                                <th>Favourite Color</th>
+                            </tr>
+                            <tr>
+                                <td>Oh Haewon</td>
+                                <td>163 cm</td>
+                                <td>Korea</td>
+                                <td>4 years</td>
+                                <td>White</td>
+                            </tr>
+                        </table>
+                        <a href="https://kpopping.com/profiles/idol/Haewon2" class="btn btn-primary d-block mx-auto text-uppercase">Haewon More...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sullyoon Part -->
+        <div id="sullyoon" class="col-sm-12 col-md-6 col-xxl-4 text-center shadow-lg mb-2" data-bs-toggle="modal" data-bs-target="#sullyoonModal">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Sullyoon</h2>
+                    <p class="card-title">Lead Vocalist, Dancer</p>
+                </div>
+                <div class="card-body">
+                    <img src="./Nmixx/Sullyoon.jpg" alt="Sullyoon" class="card-img-top">
+                    <p class="card-text">January 26th, 2004</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://kprofiles.com/sullyoon-nmixx-profile/" class="btn btn-info">See More Sullyoon</a>
+                </div>
+            </div>
+        </div>
+        <!-- Sullyoon Modal -->
+        <div class="modal fade" id="sullyoonModal">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header d-flex flex-column">
+                        <button type="button" class="btn-close btn" data-bs-dismiss="modal"></button>
+                        <p class="modal-title h1 my-2">Sullyoon Nmixx</p>
+                        <img src="./Nmixx/Sullyoon2.jpg" alt="Sullyoon Avatar" class="rounded-circle" style="height: 250px; width: 250px; object-fit: cover;">
+                    </div>
+                    <div class="modal-body">
+                        <p class="fw-bold fst-italic h3">Seol Yoona, known under her stage name Sullyoon, is a South Korean singer and dancer under JYP Entertainment. She is best known as the visual of the girl group NMIXX. She was revealed as the fourth member of the group.</p>
+                        <p class="fw-bold fst-italic h3">On March 23, 2023, it was announced that she would be a special MC for the music program Show! Music Core. Initially, she was introduced as a co-MC for the last month of March to the first week of April, following the departure of Kim Min Ju. On April 6, she was declared as the new official MC for Show! Music Core, starting from April 15.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <table class="table table-striped table-bordered table-dark">
+                            <tr>
+                                <th>Real Name</th>
+                                <th>Height</th>
+                                <th>National</th>
+                                <th>Training Period</th>
+                                <th>Favourite Color</th>
+                            </tr>
+                            <tr>
+                                <td>Seol Yoona</td>
+                                <td>168 cm</td>
+                                <td>Korea</td>
+                                <td>1 years</td>
+                                <td>Dark Blue</td>
+                            </tr>
+                        </table>
+                        <a href="https://kpopping.com/profiles/idol/Sullyoon" class="btn btn-primary d-block mx-auto text-uppercase">Sullyoon More...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bae Part -->
+        <div id="bae" class="col-sm-12 col-md-6 col-xxl-4 text-center shadow-lg mb-2" data-bs-toggle="modal" data-bs-target="#baeModal">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Bae</h2>
+                    <p class="card-title">Lead Vocalist, Dancer</p>
+                </div>
+                <div class="card-body">
+                    <img src="./Nmixx/Bae.jpg" alt="Bae" class="card-img-top">
+                    <p class="card-text">December 28th, 2004</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://kprofiles.com/bae-nmixx-profile/" class="btn btn-info">See More Bae</a>
+                </div>
+            </div>
+        </div>
+        <!-- Bae Modal -->
+        <div class="modal fade" id="baeModal">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header d-flex flex-column">
+                        <button type="button" class="btn-close btn" data-bs-dismiss="modal"></button>
+                        <p class="modal-title h1 my-2">Bae Nmixx</p>
+                        <img src="./Nmixx/Bae2.jpg" alt="Bae Avatar" class="rounded-circle" style="height: 250px; width: 250px; object-fit: cover;">
+                    </div>
+                    <div class="modal-body">
+                        <p class="fw-bold fst-italic h3">Bae Jinsol is a South Korean singer and dancer under JYP Entertainment. She is a member of the girl group NMIXX.</p>
+                        <p class="fw-bold fst-italic h3">She debuted as a member of NMIXX on February 22 2022 with their debut album "AD MARE".</p>
+                    </div>
+                    <div class="modal-footer">
+                        <table class="table table-striped table-bordered table-dark">
+                            <tr>
+                                <th>Real Name</th>
+                                <th>Height</th>
+                                <th>National</th>
+                                <th>Training Period</th>
+                                <th>Favourite Color</th>
+                            </tr>
+                            <tr>
+                                <td>Bae Jinsol</td>
+                                <td>171 cm</td>
+                                <td>Korea</td>
+                                <td>4 years</td>
+                                <td>Yellow</td>
+                            </tr>
+                        </table>
+                        <a href="https://kpopping.com/profiles/idol/Bae" class="btn btn-primary d-block mx-auto text-uppercase">Bae More...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Jiwoo Part -->
+        <div id="jiwoo" class="col-sm-12 col-md-6 col-xxl-4 text-center shadow-lg mb-2" data-bs-toggle="modal" data-bs-target="#jiwooModal">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Jiwoo</h2>
+                    <p class="card-title">Main Rapper, Vocalist, Dancer</p>
+                </div>
+                <div class="card-body">
+                    <img src="./Nmixx/Jiwoo.jpg" alt="Jiwoo" class="card-img-top">
+                    <p class="card-text">April 13th, 2005</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://kprofiles.com/jiwoo-nmixx-profile/" class="btn btn-info">See More Jiwoo</a>
+                </div>
+            </div>
+        </div>
+        <!-- Jiwoo Modal -->
+        <div class="modal fade" id="jiwooModal">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header d-flex flex-column">
+                        <button type="button" class="btn-close btn" data-bs-dismiss="modal"></button>
+                        <p class="modal-title h1 my-2">Jiwoo Nmixx</p>
+                        <img src="./Nmixx/Jiwoo2.jpg" alt="Jiwoo Avatar" class="rounded-circle" style="height: 250px; width: 250px; object-fit: cover;">
+                    </div>
+                    <div class="modal-body">
+                        <p class="fw-bold fst-italic h3">Kim Jiwoo is a South Korean rapper, dancer, and singer under JYP Entertainment. She is the main rapper of the girl group NMIXX.</p>
+                        <p class="fw-bold fst-italic h3">She debuted as a member of NMIXX on February 22 2022 with their debut album "AD MARE".</p>
+                    </div>
+                    <div class="modal-footer">
+                        <table class="table table-striped table-bordered table-dark">
+                            <tr>
+                                <th>Real Name</th>
+                                <th>Height</th>
+                                <th>National</th>
+                                <th>Training Period</th>
+                                <th>Favourite Color</th>
+                            </tr>
+                            <tr>
+                                <td>Kim Jiwoo</td>
+                                <td>161 cm</td>
+                                <td>Korea</td>
+                                <td>4 years</td>
+                                <td>Red</td>
+                            </tr>
+                        </table>
+                        <a href="https://kpopping.com/profiles/idol/Jiwoo8" class="btn btn-primary d-block mx-auto text-uppercase">Jiwoo More...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kyujin Part -->
+        <div id="kyujin" class="col-sm-12 col-md-6 col-xxl-4 text-center shadow-lg mb-2" data-bs-toggle="modal" data-bs-target="#kyujinModal">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Kyujin</h2>
+                    <p class="card-title">All Rounder, Maknae</p>
+                </div>
+                <div class="card-body">
+                    <img src="./Nmixx/Kyujin.jpg" alt="Kyujin" class="card-img-top">
+                    <p class="card-text">May 26th, 2006</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://kprofiles.com/kyujin-nmixx-profile/" class="btn btn-info">See More Kyujin</a>
+                </div>
+            </div>
+        </div>
+        <!-- Kyujin Modal -->
+        <div class="modal fade" id="kyujinModal">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header d-flex flex-column">
+                        <button type="button" class="btn-close btn" data-bs-dismiss="modal"></button>
+                        <p class="modal-title h1 my-2">Kyujin Nmixx</p>
+                        <img src="./Nmixx/Kyujin2.jpg" alt="Kyujin Avatar" class="rounded-circle" style="height: 250px; width: 250px; object-fit: cover;">
+                    </div>
+                    <div class="modal-body">
+                        <p class="fw-bold fst-italic h3">Jang Kyujin is a South Korean dancer, rapper and singer under JYP Entertainment. She is the main dancer of the girl group NMIXX.</p>
+                        <p class="fw-bold fst-italic h3">She debuted as a member of NMIXX on February 22 2022 with their debut album "AD MARE".</p>
+                    </div>
+                    <div class="modal-footer">
+                        <table class="table table-striped table-bordered table-dark">
+                            <tr>
+                                <th>Real Name</th>
+                                <th>Height</th>
+                                <th>National</th>
+                                <th>Training Period</th>
+                                <th>Favourite Color</th>
+                            </tr>
+                            <tr>
+                                <td>Jang Kyujin</td>
+                                <td>164 cm</td>
+                                <td>Korea</td>
+                                <td>4 years</td>
+                                <td>Pink</td>
+                            </tr>
+                        </table>
+                        <a href="https://kpopping.com/profiles/idol/Kyujin" class="btn btn-primary d-block mx-auto text-uppercase">Kyujin More...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- Songs of Nmixx -->
+    <section id="songs" class="py-5">
+        <div class="container-md mt-4">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">2022</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">2023</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">2024</button>
+                </li>
+            </ul>
+          
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <table class="table table-striped table-responsive table-bordered table-hover table-info">
+                        <tr class="table-primary text-center text-uppercase">
+                            <th>Albums</th>
+                            <th>Day Release</th>
+                            <th>Name Song</th>
+                            <th>Link the Song</th>
+                        </tr>
+                        <tr class="text-center">
+                            <td>AD MARE</td>
+                            <td>February 22, 2022</td>
+                            <td>Tank</td>
+                            <td><a href="" class="text-success">Tank Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>AD MARE</td>
+                            <td>February 22, 2022</td>
+                            <td>O.O</td>
+                            <td><a href="" class="text-success">O.O Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>AD MARE</td>
+                            <td>February 22, 2022</td>
+                            <td>Tank Instrument</td>
+                            <td><a href="" class="text-success">Tank Instrument Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>AD MARE</td>
+                            <td>February 22, 2022</td>
+                            <td>O.O Instrument</td>
+                            <td><a href="" class="text-success">O.O Instrument Link</a></td>
+                        </tr>
+
+                        <tr class="text-center">
+                            <td>GABBY’S DOLLHOUSE X NMIXX</td>
+                            <td>May 2, 2022</td>
+                            <td>Hey Gabby!</td>
+                            <td><a href="" class="text-success">Hey Gabby! Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>GABBY’S DOLLHOUSE X NMIXX</td>
+                            <td>May 2, 2022</td>
+                            <td>Sprinkle Party</td>
+                            <td><a href="" class="text-success">Sprinkle Party Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>GABBY’S DOLLHOUSE X NMIXX</td>
+                            <td>May 2, 2022</td>
+                            <td>Hey Gabby! Instrument</td>
+                            <td><a href="" class="text-success">Hey Gabby! Instrument Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>GABBY’S DOLLHOUSE X NMIXX</td>
+                            <td>May 2, 2022</td>
+                            <td>Sprinkle Party Instrument</td>
+                            <td><a href="" class="text-success">Sprinkle Party Instrument Link</a></td>
+                        </tr>
+
+                        <tr class="text-center">
+                            <td>Kiss</td>
+                            <td>July 31, 2022</td>
+                            <td>Kiss Instrument</td>
+                            <td><a href="" class="text-success">Kiss Instrument Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Kiss</td>
+                            <td>July 31, 2022</td>
+                            <td>Kiss Instrument</td>
+                            <td><a href="" class="text-success">Kiss Instrument Link</a></td>
+                        </tr>
+
+                        <tr class="text-center">
+                            <td>ENTWURF</td>
+                            <td>September 19, 2022</td>
+                            <td>DICE</td>
+                            <td><a href="" class="text-success">DICE Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>ENTWURF</td>
+                            <td>September 19, 2022</td>
+                            <td>COOL</td>
+                            <td><a href="" class="text-success">COOL Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>ENTWURF</td>
+                            <td>September 19, 2022</td>
+                            <td>DICE Instrument</td>
+                            <td><a href="" class="text-success">DICE Instrument Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>ENTWURF</td>
+                            <td>September 19, 2022</td>
+                            <td>COOL Instrument</td>
+                            <td><a href="" class="text-success">COOL Instrument Link</a></td>
+                        </tr>
+
+                        <tr class="text-center">
+                            <td>Funky Glitter Christmas</td>
+                            <td>November 23, 2022</td>
+                            <td>Funky Glitter Christmas Instrument</td>
+                            <td><a href="" class="text-success">Funky Glitter Christmas Link</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <table class="table table-striped table-responsive table-bordered table-hover table-info">
+                        <tr class="table-primary text-center text-uppercase">
+                            <th>Albums</th>
+                            <th>Day Release</th>
+                            <th>Name Song</th>
+                            <th>Link the Song</th>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Young, Dumb, Stupid</td>
+                            <td>March 13, 2023</td>
+                            <td>Young, Dumb, Stupid</td>
+                            <td><a href="" class="text-success">Young, Dumb, Stupid Link</a></td>
+                        </tr>
+
+                        <tr class="text-center">
+                            <td>expérgo</td>
+                            <td>March 20, 2023</td>
+                            <td>Young, Dumb, Stupid</td>
+                            <td><a href="" class="text-success">Young, Dumb, Stupid Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>expérgo</td>
+                            <td>March 20, 2023</td>
+                            <td>Love Me Like This</td>
+                            <td><a href="" class="text-success">Love Me Like This Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>expérgo</td>
+                            <td>March 20, 2023</td>
+                            <td>PAXXWORD</td>
+                            <td><a href="" class="text-success">PAXXWORD Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>expérgo</td>
+                            <td>March 20, 2023</td>
+                            <td>Just Did It</td>
+                            <td><a href="" class="text-success">Just Did It Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>expérgo</td>
+                            <td>March 20, 2023</td>
+                            <td>My Gosh</td>
+                            <td><a href="" class="text-success">My Gosh Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>expérgo</td>
+                            <td>March 20, 2023</td>
+                            <td>HOME</td>
+                            <td><a href="" class="text-success">HOME Link</a></td>
+                        </tr>
+
+                        <tr class="text-center">
+                            <td>Roller Coaster</td>
+                            <td>June 3, 2023</td>
+                            <td>Roller Coaster</td>
+                            <td><a href="" class="text-success">Roller Coaster Link</a></td>
+                        </tr>
+
+                        <tr class="text-center">
+                            <td>A Midsummer NMIXX’s Dream</td>
+                            <td>July 11, 2023</td>
+                            <td>Party O’Clock</td>
+                            <td><a href="" class="text-success">Party O’Clock Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>A Midsummer NMIXX’s Dream</td>
+                            <td>July 11, 2023</td>
+                            <td>Roller Coaster</td>
+                            <td><a href="" class="text-success">Roller Coaster Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>A Midsummer NMIXX’s Dream</td>
+                            <td>July 11, 2023</td>
+                            <td>Party O’Clock Intrument</td>
+                            <td><a href="" class="text-success">Party O’Clock Intrument Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>A Midsummer NMIXX’s Dream</td>
+                            <td>July 11, 2023</td>
+                            <td>Roller Coaster Intrument</td>
+                            <td><a href="" class="text-success">Roller Coaster Intrument Link</a></td>
+                        </tr>
+
+                        <tr class="text-center">
+                            <td>Soñar (Breaker)</td>
+                            <td>December 4, 2023</td>
+                            <td>Soñar (Breaker)</td>
+                            <td><a href="" class="text-success">Soñar (Breaker) Link</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <table class="table table-striped table-responsive table-bordered table-hover table-info">
+                        <tr class="table-primary text-center text-uppercase">
+                            <th>Albums</th>
+                            <th>Day Release</th>
+                            <th>Name Song</th>
+                            <th>Link the Song</th>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Fe3O4: BREAK</td>
+                            <td>January 15, 2024</td>
+                            <td>DASH</td>
+                            <td><a href="" class="text-success">DASH Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Fe3O4: BREAK</td>
+                            <td>January 15, 2024</td>
+                            <td>Soñar (Breaker)</td>
+                            <td><a href="" class="text-success">Soñar (Breaker) Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Fe3O4: BREAK</td>
+                            <td>January 15, 2024</td>
+                            <td>Run For Roses</td>
+                            <td><a href="" class="text-success">Run For Roses Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Fe3O4: BREAK</td>
+                            <td>January 15, 2024</td>
+                            <td>BOOM</td>
+                            <td><a href="" class="text-success">BOOM Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Fe3O4: BREAK</td>
+                            <td>January 15, 2024</td>
+                            <td>Passionfruit</td>
+                            <td><a href="" class="text-success">Passionfruit Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Fe3O4: BREAK</td>
+                            <td>January 15, 2024</td>
+                            <td>XOXO</td>
+                            <td><a href="" class="text-success">XOXO Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Fe3O4: BREAK</td>
+                            <td>January 15, 2024</td>
+                            <td>Break The Wall</td>
+                            <td><a href="" class="text-success">Break The Wall Link</a></td>
+                        </tr>
+
+                        <tr class="text-center">
+                            <td>Like Magic</td>
+                            <td>February 20, 2024</td>
+                            <td>Like Magic</td>
+                            <td><a href="" class="text-success">Like Magic Link</a></td>
+                        </tr>
+
+                        <tr class="text-center">
+                            <td>FEIFEI</td>
+                            <td>July 31, 2024</td>
+                            <td>FEIFEI</td>
+                            <td><a href="" class="text-success">FEIFEI Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>FEIFEI</td>
+                            <td>July 31, 2024</td>
+                            <td>FEIFEI Intrument</td>
+                            <td><a href="" class="text-success">FEIFEI Intrument Link</a></td>
+                        </tr>
+
+                        <tr class="text-center">
+                            <td>Fe3O4: STICK OUT</td>
+                            <td>August 19, 2024</td>
+                            <td>별별별 (See that?)</td>
+                            <td><a href="" class="text-success">별별별 (See that?) Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Fe3O4: STICK OUT</td>
+                            <td>August 19, 2024</td>
+                            <td>Moving On</td>
+                            <td><a href="" class="text-success">Moving On Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Fe3O4: STICK OUT</td>
+                            <td>August 19, 2024</td>
+                            <td>Love Is Lonely</td>
+                            <td><a href="" class="text-success">Love Is Lonely Link</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Fe3O4: STICK OUT</td>
+                            <td>August 19, 2024</td>
+                            <td>SICKUHH (ft.Kid Milli)</td>
+                            <td><a href="" class="text-success">SICKUHH (ft.Kid Milli) Link</a></td>
+                        </tr>
+
+                        <tr class="text-center">
+                            <td>Come On</td>
+                            <td>September 27, 2024</td>
+                            <td>Come On (with Dimitri Vegas, Like Mike)</td>
+                            <td><a href="" class="text-success">Come On (with Dimitri Vegas, Like Mike) Link</a></td>
+                        </tr>
+
+                        <tr class="text-center">
+                            <td>Soñar (Spanish Ver.)</td>
+                            <td>October 11, 2024</td>
+                            <td>Soñar (Spanish Ver.)</td>
+                            <td><a href="" class="text-success">Soñar (Spanish Ver.) Link</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+          
+    </section>
+    <!-- Nmixx Images -->
+    <section id="images" class="py-5">
+        <div class="container text-bg-dark p-4">
+            <img src="./Nmixx/NmixxBackground.jpg" alt="Nmixx" class="img-fluid rounded-pill">
+        </div>
+    </section>
+    <!-- Nmixx Videos -->
+    <section id="videos" class="container bg-dark px-4 pb-5">
+        <iframe src="https://www.youtube.com/embed/L21DZz3XWJs"></iframe>
+    </section>
+    <!-- Media Section -->
+    <section id="media" class="text-bg-dark my-3 px-4 pb-5 container-md">
+        <div class="d-flex justify-content-around flex-wrap gap-2">
+            <div class="media-item text-center">
+                <a href="https://www.youtube.com/c/NMIXXOfficial" data-bs-toggle="tooltip" title="Nmixx Youtube"><img src="./Nmixx/Youtube.png" alt="Youtube"></a>
+            </div>
+            <div class="media-item text-center">
+                <a href="https://www.facebook.com/NMIXXOfficial/" data-bs-toggle="tooltip" title="Nmixx Facebook"><img src="./Nmixx/Facebook.png" alt="Facebook"></a>
+            </div>
+            <div class="media-item text-center">
+                <a href="https://x.com/nmixx_official" data-bs-toggle="tooltip" title="Nmixx X (Twitter)"><img src="./Nmixx/X.png" alt="X"></a>
+            </div>
+            <div class="media-item text-center">
+                <a href="https://www.tiktok.com/@nmixx_official" data-bs-toggle="tooltip" title="Nmixx Tiktok"><img src="./Nmixx/Tiktok.png" alt="Tiktok"></a>
+            </div>
+            <div class="media-item text-center">
+                <a href="https://www.instagram.com/nmixx_official/" data-bs-toggle="tooltip" title="Nmixx Instagram"><img src="./Nmixx/Instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </section>
+    <!-- More Section -->
+    <section id="more" class="container-md text-bg-dark px-5 pb-5">
+        <!-- Sign In -->
+        <div class="offcanvas offcanvas-start text-bg-dark" id="signin">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title">Form Sign In</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <form action="">
+                    <label for="username" class="form-label">Your Username:</label>
+                    <input type="text" id="username" class="form-control" placeholder="MyouiMina11o2">
+                    <label for="password" class="form-label mt-2">Your Username:</label>
+                    <input type="password" id="password" class="form-control" placeholder="MinaTwice2015">
+                    <button type="submit" class="btn btn-outline-success btn-lg w-100 my-3">OK</button>
+                    <button type="reset" class="btn btn-outline-danger btn-lg w-100">Reset</button>
+                </form>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#signin">Sign In</button>
+        <!-- Sign Up -->
+        <div class="offcanvas offcanvas-end text-bg-dark" id="signup">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title">Form Sign Up</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <form action="">
+                    <label for="name" class="form-label mt-2">Your Name:</label>
+                    <input type="text" id="name" class="form-control" placeholder="Myoui Mina">
+                    <label for="date" class="form-label mt-2">Your Birthday:</label>
+                    <input type="date" id="date" class="form-control" placeholder="24/03/1997">
+                    <label for="username" class="form-label mt-2">Your Username:</label>
+                    <input type="text" id="username" class="form-control" placeholder="MyouiMina11o2">
+                    <label for="password" class="form-label mt-2">Your Username:</label>
+                    <input type="password" id="password" class="form-control" placeholder="MinaTwice2015">
+                    <label for="sex" class="form-label mt-2">Your Sex:</label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="male" name="sex" value="male">
+                        <label class="form-check-label" for="radio1">Male</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="female" name="sex" value="female">
+                        <label class="form-check-label" for="radio2">Female</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="lgbt" name="sex" value="lgbt">
+                        <label class="form-check-label">LGBT</label>
+                    </div>
+                    <button type="submit" class="btn btn-outline-success btn-lg w-100 my-3">OK</button>
+                    <button type="reset" class="btn btn-outline-danger btn-lg w-100">Reset</button>
+                </form>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#signup">Sign Up</button>
+        <!-- Something for Nmixx (Vietnamese) -->
+        <h1 class="text-center fst-italic fw-bolder mt-3">Something I write for Nmixx in Vietnamese</h1>
+        <p class="h3 my-3" style="line-height: 1.5;">
+            Chào NMIXX, các em là nhóm nhạc nữ thứ 13 mà anh làm cho các em, sau Iz*one, Blackpink, Twice, Red Velvet, (G)-I-DLE, Aespa, Itzy, Le Sserafim, IVE, Kep1er, Baemon và StayC.
+            Trang web a viết cho các em là trang web đặc biệt, nó đánh dấu một bước chuyển mình trong quá trình học code của anh. Anh viết nên những dòng này khi anh đang sử dụng chiếc máy vi tính
+            mới giá 15 củ khoai. Anh cũng viết nên trang này bằng một thư viện của CSS là Boosttrap 5, chứ không có code thuần tay như các trang web kia nữa. Đó là về quá trình a code, tuy hơi lâu
+            nhưng anh code bằng thư viện thấy cũng nhàn hơn rất nhiều. Tiếp theo là nhận xét về các em, NMIXX là đàn em của Twice và Itzy, anh thì vốn là fan Twice rồi, rất yêu thích nhóm và
+            dành những gì trân quý nhất cho nhóm nhạc đàn chị của các em, một nhóm nhạc huyền thoại thế hệ gen 3. Itzy thì cũng là một tên tuổi xuất sắc trong thế hệ của mình nhưng hiện tại họ
+            cũng giống các em là đều khá chìm. Các em debut năm 2022, một năm đầy sóng gió khi hai nhóm nhạc nữ rất mạnh cùng debut khác là Newjeans và Le Sserafim cùng tham gia chiến tuyến.
+            Bên cạnh đó là một Aespa đã 2 năm kinh nghiệm, thêm IVE với đầy sức trẻ của Ahn Yujin và Jang Wonyoung, chưa kể (G)I-DLE cũng rất mạnh. Các em là nhóm nhạc với những thành viên đầy
+            tài năng, a nói thật là ngang ngửa được Aespa nhưng các em quá nhọ. Nhọ thứ nhất là nhạc các em ra lại đúng lúc thời kỳ mà JYP khủng hoảng về ý tưởng lẫn phong cách âm nhạc khi mà
+            Twice cũng như Itzy nhạc nhẽo cực chán mà họ vốn có sức hút rất lớn. Nhọ thứ hai là các em quả thật ngoan quá, ngoan nên các em ít được chú ý dù trong nhóm có Sullyoon được mệnh danh
+            là một trong bốn tứ đại visual gen 4 cùng Karina, Wonyoung và đàn chị các em là Yuna. Anh cũng thấy các em thực sự rất là ngoan, đó là điều tốt, chỉ có điều showbiz người ta lại thích
+            sự thị phi hơn cơ. Tuy nhiên a không muốn các em hư, các em hãy luôn là thế này, mong các em có nhạc hay để có một sự bứt phá lớn nhé Nmixx, a chúc các em luôn giữ sức khỏe, sự nhiệt
+            huyết và niềm đam mê với âm nhạc. Chúc các em thành công, a sẽ luôn ủng hộ các em hết mình.
+        </p>
+        <form action="" class="text-bg-light p-4">
+            <label for="" class="form-label mt-2">Who is your bias in NMIXX?</label>
+            <select class="form-select form-select-lg">
+                <option value="choose">-- Choose your bias in NMIXX --</option>
+                <option value="Lily">Lily Jinpark Morrow</option>
+                <option value="Haewon">Oh Haewon</option>
+                <option value="Sullyoon">Seol Yoona</option>
+                <option value="Bae">Bae Jinsol</option>
+                <option value="Jiwoo">Kim Jiwoo</option>
+                <option value="Kyujin">Jang Kyujin</option>
+            </select>
+            <label for="comment" class="form-label mt-2">Comments:</label>
+            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+            <label for="" class="form-label mt-2">What Are Your Company Do You Like Most</label>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="sm" name="sm">
+                <label class="form-check-label" for="sm">SM Entertainment (EXO, SNSD, F(x), Red Velvet, NCT, Aespa,...)</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="yg" name="yg">
+                <label class="form-check-label" for="yg">YG Entertainment (BigBang, 2NE1, Blackpink, Treasure, Baemon,...)</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="jyp" name="jyp">
+                <label class="form-check-label" for="jyp">JYP Entertainment (Wonder Girls, 2PM, Miss A, Twice, Stray Kids, Itzy, Nmixx,...)</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="hybe" name="hybe">
+                <label class="form-check-label" for="hybe">HYBE Labels (BTS, New Jeans, Le Sserafim, GFriend, Illit,...)</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="other" name="other">
+                <label class="form-check-label" for="other">Other Companies (IVE, (G)I-DLE, Iz*one, T-araa, Momoland, I.O.I, Kep1er,...)</label>
+            </div>
+            <button type="submit" class="btn btn-success mt-2">Send</button>
+            <button type="reset" class="btn btn-danger mt-2">Clear</button>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Script cho Tooltip
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        // Chuyển đổi giao diện sáng tối
+        const body = document.body;
+        const toggleButton = document.getElementById('themeToggle');
+        toggleButton.addEventListener('click', () => {
+            if (body.getAttribute('data-bs-theme') === 'light') {
+                body.setAttribute('data-bs-theme', 'dark');
+                toggleButton.textContent = "Light Mode";
+                toggleButton.classList.remove("btn-dark");
+                toggleButton.classList.add("btn-light");
+            } else {
+                body.setAttribute('data-bs-theme', 'light');
+                toggleButton.textContent = "Dark Mode";
+                toggleButton.classList.remove("btn-light");
+                toggleButton.classList.add("btn-dark");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kpop Group</title>
+    <link rel="icon" href="./Images/kpoplogo.jpg" type="icon/jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html {
+            user-select: none;
+        }
+        #intro-kpop {
+            background: url(./Images/Cưới.JPG);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom 20% center;
+        }
+        #intro-kpop .blockquote{
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .card img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+        #groups img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        #groups .group-container {
+            width: 30%;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .carousel-item img {
+            height: 1200px;
+            object-fit: cover;
+        }
+        @media (max-width: 740px) {
+            #navbar ul li {
+                margin-left: 15px;
+            }
+            .carousel-item .carousel-caption  {
+                display: none;
+            }
+            .carousel-item img {
+                height: 330px;
+            }
+            #intro-kpop {
+                background-image: none;
+            }
+            #groups .group-container {
+                width: 100%;
+            }
+            #groups img {
+                height: 250px;
+            }
+        }
+        @media (max-width: 1023px) and (min-width: 741px) {
+            .carousel-item .carousel-caption h1 {
+                font-size: 20px;
+            }
+            .carousel-item .carousel-caption p {
+                font-size: 15px;
+            }
+            .carousel-item img {
+                height: 500px;
+            }
+            #intro-kpop {
+                background-image: none;
+            }
+            #groups .group-container {
+                width: 42%;
+            }
+            #groups img {
+                height: 210px;
+            }
+        }
+        @media (min-width: 1024px) and (max-width: 1200px) {
+            .carousel-item img {
+                height: 700px;
+            }
+            .carousel-item .carousel-caption h1 {
+                font-size: 24px;
+            }
+            .carousel-item .carousel-caption p {
+                font-size: 18px;
+            }
+            #intro-kpop {
+                background-image: none;
+            }
+            #groups .group-container {
+                width: 40%;
+            }
+            #groups img {
+                height: 230px;
+            }
+        }
+        @media (min-width: 1201px) and (max-width: 1500px) {
+            .carousel-item img {
+                height: 900px;
+            }
+            #groups .group-container {
+                width: 30%;
+            }
+            #groups img {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body data-bs-theme="light">
+    <!-- Navbar -->
+    <div class="navbar navbar-expand-md fixed-top text-bg-info d-flex justify-content-around px-4">
+        <a href="#" class="navbar-brand">KPOP GROUP</a>
+        <button class="btn navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <button id="themeToggle" class="btn btn-dark me-3">Dark Mode</button>
+        <div class="navbar-collapse collapse" id="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#carousel" class="nav-link">Trang chủ</a></li>
+                <li class="nav-item"><a href="#introduce" class="nav-link">Giới thiệu</a></li>
+                <li class="nav-item"><a href="#groups" class="nav-link">Các nhóm nhạc</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Liên hệ</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Trang chủ -->
+    <div id="carousel" class="slide carousel container-xxl mw-100 mh-100 mt-5 pt-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <span data-bs-target="#carousel" data-bs-slide-to="0" class="active"></span>
+            <span data-bs-target="#carousel" data-bs-slide-to="1"></span>
+            <span data-bs-target="#carousel" data-bs-slide-to="2"></span>
+            <span data-bs-target="#carousel" data-bs-slide-to="3"></span>
+            <span data-bs-target="#carousel" data-bs-slide-to="4"></span>
+            <span data-bs-target="#carousel" data-bs-slide-to="5"></span>
+            <span data-bs-target="#carousel" data-bs-slide-to="6"></span>
+            <span data-bs-target="#carousel" data-bs-slide-to="7"></span>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Images/RedVelvet.jpg" alt="Red Velvet" class="d-block w-100">
+                <div class="carousel-caption text-bg-dark">
+                    <h1 class="text-uppercase">Red Velvet</h1>
+                    <p class="lead">Left to right: Wendy, Joy, Seulgi, Yeri, Irene</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/Twice.jpg" alt="Twice" class="d-block w-100">
+                <div class="carousel-caption text-bg-dark">
+                    <h1 class="text-uppercase">Twice</h1>
+                    <p class="lead">Left to right: Jeongyeon, Sana, Chaeyoung, Mina, Jihyo, Dahyun, Tzuyu, Nayeon, Momo</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/BlackPink.jpg" alt="BlackPink" class="d-block w-100">
+                <div class="carousel-caption text-bg-dark">
+                    <h1 class="text-uppercase">BlackPink</h1>
+                    <p class="lead">Left to right: Jisoo, Rosé, Jennie, Lisa</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/NewJeans.jpg" alt="NewJeans" class="d-block w-100">
+                <div class="carousel-caption text-bg-dark">
+                    <h1 class="text-uppercase">NewJeans</h1>
+                    <p class="lead">Left to right: Danielle, Hanni, Hyein, Haerin, Minji</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/Itzy.jpg" alt="Itzy" class="d-block w-100">
+                <div class="carousel-caption text-bg-dark">
+                    <h1 class="text-uppercase">Itzy</h1>
+                    <p class="lead">Left to right: Chaeryoung, Lia, Yuna, Ryujin, Yeji</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/Aespa.jpg" alt="Aespa" class="d-block w-100">
+                <div class="carousel-caption text-bg-dark">
+                    <h1 class="text-uppercase">Aespa</h1>
+                    <p class="lead">Left to right: Winter, Ningning, Giselle, Karina</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/IVE.jpg" alt="JVE" class="d-block w-100">
+                <div class="carousel-caption text-bg-dark">
+                    <h1 class="text-uppercase">IVE</h1>
+                    <p class="lead">Left to right: Gaeul, Rei, Yujin, Leeseo, Wonyoung, Liz</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/LeSserafim2.jpg" alt="Le Sserafim" class="d-block w-100">
+                <div class="carousel-caption text-bg-dark">
+                    <h1 class="text-uppercase">Le Sserafim</h1>
+                    <p class="lead">Left to right: Yunjin, Chaewon, Kazuha, Sakura, Eunchae</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <div class="container text-center border border-4 p-4 border-info my-5">
+        <h1 class="display-6">Hello Everyone</h1>
+        <p class="h1">Xin chào mọi người, chào mừng đến với trang web của chúng tôi</p>
+        <p class="mark">Bạn yêu thích KPOP? Đây là điểm đến lý tưởng của bạn.</p>
+        <p class="blockquote-footer">Nơi đây, chúng tôi giới thiệu đến các nhóm nhạc hàng đầu Kpop của chúng tôi.</p>
+        <p class="text-break lead">
+            Từ khoảng những năm 2008-2009, làn sóng văn hóa Hàn Quốc đã du nhập vào Việt Nam thông qua phim ảnh hay âm nhạc, thời gian cũng như âm thực. Chúng đã tạo nên nhiều hứng thú và sự
+            mến mộ với những thanh thiếu niên cuối thế hệ 198x và đầu 199x thời điểm đó. Sau mười mấy năm, làn sóng này không chỉ đã trở nên quen thuộc với các bộ phận người hâm mộ Việt Nam
+            mà đã trở thành món ăn tinh thần cho nhiều người đặc biệt là những bạn trẻ. Với những bộ phim Hàn thì người trẻ ủng hộ rất nhiều, với mô típ lãng mạn cùng với hình ảnh cặp đôi yêu 
+            nhau ngọt ngào, các bạn nữ rất thích và mê đắm thể loại này. Phong cách thời trang của Hàn Quốc thì có lẽ đã ăn vào máu nhiều bạn trẻ thời nay với sự e thẹn ngại ngùng của các bạn nam,
+            tóc bồng bềnh như lãng tử hay những làn da trắng như tài tử. Ẩm thực Hàn Quốc được đón nhận mạnh mẽ như món chả cá Hàn Quốc, lẩu bánh gạo, thịt nướng Hàn,... với các quán ăn đồ Hàn mọc
+            lên rất nhiều, tiêu biểu là sự thành công lớn của chuỗi nhà hàng Dookki. Bên cạnh đó là video về thể loại asmr mukbang eating cũng ăn sâu vào nhiều người hâm mộ và có nhiều người Việt
+            cũng làm theo thể loại này. Và đặc biệt nhất chính là âm nhạc Hàn Quốc...
+        </p>
+        <p class="text-break lead">
+            Âm nhạc Hàn Quốc có lẽ chính là thành công lớn nhất của văn hóa Hàn vì không chỉ tác động đến Việt Nam mà còn đến với thế giới. Thời điểm 2008, 2009 là thời kỳ những nhóm nhạc thế hệ
+            thứ hai bắt đầu vươn ra châu Á và Việt Nam là một trong những nước yêu thích nhất điều đó. Những nhóm nhạc như Big Bang, SNSD, T-Ara, DBSK, 2NE1... đã đi sâu vào tiềm thức của thế hệ
+            cuối 8x, đầu 9x đó bởi những ca khúc có vũ đạo mạnh mẽ, âm nhạc cuốn hút. Sau thành công của thế hệ gen 2 đó, âm nhạc Kpop càng phổ biến không chỉ ở Việt Nam mà còn là trên thế giới,
+            thế hệ thứ ba với những BTS, BlackPink, EXO, Twice, Red Velvet,... đã càng khẳng định sức hút mạnh mẽ của âm nhạc đến từ xứ sở kim chi này. Và cho đến hiện tại, những nhóm nhạc trẻ
+            tiếp tục những di sản và phát huy chúng hơn nữa với các nhóm nhạc nữ TXT, SKZ, IVE, Newjeans, Le Sserafim, Aespa,... càng khẳng định thêm sự mạnh mẽ, sức hút, bền vững của âm nhạc nước
+            này. Và tôi, NTN- là một fan Kpop lâu năm, sẽ đem đến cho các bạn những thông tin về các nhóm nhạc cũng như các ca sĩ Hàn Quốc hàng đầu mà bạn có thể chưa biết hoặc đã biết.
+        </p>
+    </div>
+    <!-- Giới thiệu -->
+    <div class="container-fluid mt-5 text-bg-success rounded rounded-5 px-4 py-5" id="introduce">
+        <h1 class="text-center text-uppercase py-2">Tôi là ai?</h1>
+        <h2 class="mark">Giới thiệu qua về tôi, học vấn (2001 - 2019)</h2>
+        <p class="lead">
+            Xin chào, tôi là tên là Nguyễn Thành Nam, sinh ngày 3 tháng 10 năm 2001, tôi ở Hoàng Mai, Hà Nội. Cuộc sống của tôi trước đến giờ có lẽ cũng không có quá nhiều trải nghiệm cũng như
+            sự đặc sắc. Cũng như những đứa trẻ khác, tôi sinh ra trong gia đình cũng không giàu nhưng cũng không nghèo, gọi là đủ ăn, cái tôi nhận được là tình cảm của bố mẹ đã dạy dỗ tôi nên 
+            người dù ông bà vốn không phải là những người thành đạt. Tôi học cấp một và cấp hai ở Yên Sở, trường ở làng tôi. Năm 2016, tôi thi đỗ trường Trung học Phổ Thông Hoàng Văn Thụ- ngôi
+            trường là ước mơ của nhiều đứa trong khóa 2001 của tôi thời điểm đó và tôi đã làm được với con số 53 điểm. Tôi được học lớp chọn là A2 nhưng vì không học thêm nên trong quãng thời
+            gian lớp 10, tôi học kém dù 9 năm trước đều học sinh giỏi. Năm lớp 11, tôi quyết định chuyển xuống A7 và đây là quãng thời gian tuổi học trò đáng quý nhất của tôi. Hai năm còn lại của
+            cấp ba, tôi đã học rất tốt và có những người bạn tuyệt vời. Cho đến hiện tại, tôi vẫn nhớ họ và những gương mặt, giọng nói của từng người. Hết năm 12, tôi thi đỗ vào trường đại học 
+            Mở là nguyện vọng 2 về ngành ngân hàng, trước đó thì tôi thi trượt học viện Ngân Hàng khi thiếu một chút điểm. Tôi thời điểm đó
+            mông lung vì mới 18 tuổi chập chững vào đời. Từ bé có thể nói tôi là một đứa khá hướng nội, nhút nhát nhưng càng lớn tôi càng mở rộng vốn giao tiếp của mình hơn. Năm 18 tuổi đó, tôi
+            thử học với đứa bạn hồi cấp hai ở trường Cao đẳng Du Lịch Hà Nội nằm trên đường Hồ Tùng Mậu, gần đại học Thương Mại. Tôi theo học một thời gian nhưng cảm thấy không ổn cùng với tình
+            hình kinh tế khó khăn nên tôi đã từ bỏ...
+        </p>
+        <h2 class="mark">Giai đoạn làm việc Online tại gia (11/2019 - nay)</h2>
+        <p class="lead">
+            Sau khi quyết định nghỉ việc học ở trường cao đẳng, tôi quyết định đi thử nghiệm một số công việc để kiếm tiền trang trải cho bố mẹ. Tôi thời điểm đó đúng nghĩa là tờ giấy trắng,
+            ngây thơ chập chững bước vào đời, chưa hiểu mùi đời như nào cũng như việc kiếm tiền khó khăn ra sao. Tôi lần lượt trải nghiệm các công việc như tư vấn khóa học tiếng Anh cho khách
+            hàng tại Apax Leaders, nhân viên quầy rau tại siêu thị Mega Mart, thổi chai nhựa tại xưởng nhỏ, làm công việc sửa và cài máy in... những công việc tôi chỉ trải nghiệm trong thời
+            gian ngắn mà thôi. Tôi buồn chán, suy nghĩ tiêu cực khi tự hỏi rằng mình nghỉ học liệu có phải quyết định đúng không, nhưng mà nghĩ về tiền bạc, tôi lại lo khi mà ba mẹ tôi không
+            có nhiều để giúp tôi yên tâm. Cũng không biết do may mắn hay như nào, tôi có đứa bạn thân tên Dũng từ hồi lớp 10 đã giới thiệu tôi làm công việc online tại nhà cùng với anh ruột của
+            ông ấy, tôi cũng khá hào hứng nhận nhưng cũng lo vì máy tính tôi ít sử dụng. Chiếc máy tính đầu tiên tôi được cằm trong tay là chiếc máy tính từ năm 2010, anh trai tôi đã mua và lâu 
+            không sử dụng, có thể nói là tôi cố gắng tiết kiệm cho bố mẹ để còn dùng cho việc khác. Tôi được anh ấy cho làm các dự án về dữ liệu của công ty Appen - một công ty có trụ sở bên Úc.
+            Trong suốt khoảng thời gian tôi làm và cho đến hiện tại, tôi đã gắn bó với anh ấy khá lâu, hiểu về tính chất công việc, ưu điểm và khuyết điểm của chúng. Về ưu điểm thì điều tôi thích
+            có lẽ chính là sự thoải mái khi công việc không gò bó, tự do làm tại nhà, mình tự quản lý thời gian của mình, miễn là cố gắng làm đủ số lượng công việc đã giao. Tôi cũng được trải
+            nghiệm nhiều thể loại dự án khác nhau để training dữ liệu cho sản phẩm Meta AI, mỗi dự án tuy đơn giản nhưng cũng cần đọc kỹ để tránh sai sót. Những dự án tôi làm rất nhiều nhưng có vài
+            dự án tôi nhớ như là: Phiên âm, đánh giá thể loại video, sao chép đường liên kết ảnh, chọn và dán nhãn wikipedia,... Làm lâu năm là thế nhưng công việc vốn không đều, có hôm có hôm không
+            và tùy từng dự án nào trả lương cao lương thấp. Điều đó khiến tôi cảm thấy không có nhiều hi vọng về tương lai và quyết định tìm một hướng đi cụ thể hơn.
+        </p>
+        <h2 class="mark">Học tiếng Nhật (2021 - nay)</h2>
+        <p class="lead">
+            Trong thời điểm giãn cách vì Covid-19, cùng với đó là khá chán vì lượng công việc online ít ỏi, tôi quyết định thử học một ngôn ngữ mới mong rằng sẽ giúp mình có tương lai ổn hơn.
+            Cũng vì bài toán kinh tế, tôi cũng chẳng dám xin tiền ba mẹ để học ở trường hay trung tâm, tiền tôi làm được thì cũng đưa ba mẹ tiêu vì không đủ, còn chút ít tiền thì tôi đã tự lên
+            mạng học qua các bài giảng video online tại nhà của Dũng Mori. Tôi đã học rất chăm chỉ, có thời gian rảnh là tôi học tiếng Nhật. Những bài giảng của trung tâm thầy Dũng đều là dạng
+            video đã quay từ trước, từ chữ Hán, từ vựng, ngữ pháp, kaiwa. Tôi học và ghi chép cẩn thận. Bên cạnh đó, tôi cũng lên những trang mạng, nguồn Youtube từ những kênh tiếng Nhật khác,
+            thậm chí là xem những video free của Riki Nihongo để học. Năm 2022, tôi quyết định đăng ký thi N3 tiếng Nhật sau quãng thời gian mình tự học ở nhà, để kiểm chứng xem khả năng của mình
+            đến đâu. Kỳ thi tôi tham dự là JLPT, một chứng chỉ rất nổi của Nhật và được nhiều nơi công nhận. Tôi lo lắng rằng mình trượt nhưng tôi đã đủ đỗ N3 với số điểm sát nút. Hăng máu nên tôi
+            quyết thi luôn N2 vào tháng 7 năm 2023, 7 tháng sau khi đỗ N3. Lần này, tôi thi thậm chí còn làm tốt hơn khi đỗ N2 một cách an toàn. So với nhiều người, việc tự học và đỗ được N2 quả
+            thực không dễ và tôi cũng cảm thấy vui vẻ phần nào khi mà đỗ được mức độ này khi tự học cũng như không trượt lần nào. Tôi cũng rất hào hứng với tấm bằng N2 dự định sẽ đi xin việc nhưng
+            mọi thứ còn nhiều chông gai. Tôi vốn không sang Nhật vì kinh tế, mà giờ làm giáo viên cũng khó khi chứng chỉ cả kinh nghiệm là không đủ...
+        </p>
+        <h2 class="mark">Học lập trình (11/2023 - nay)</h2>
+        <p class="lead">
+            Cũng như nhiều người khác, đều có suy nghĩ rằng IT là vua của mọi nghề. Tôi thì không đến mức như thế, cơ mà tôi cũng thích máy tính tại đã làm quen với nó 4 năm rồi, cộng hưởng với
+            việc tự học tiếng Nhật, tôi quyết định học Code Website và sau những kinh nghiệm học, tôi làm nên website này cho mọi người cùng theo dõi Kpop.
+        </p>
+    </div>
+    <div class="container-fluid p-5" id="intro-kpop">
+        <h2 class="text-center text-secondary">Hành trình đến Kpop</h2>
+        <div class="blockquote text-light p-3">
+            <p class="lead">
+                Tôi biết Kpop từ những năm 2010, 2011 ở thời kỳ thế hệ thứ hai bắt đầu hoạt động năng nổ. Thời điểm đó thì không có mạng xã hội, không có internet, điện thoại còn là thứ xa xỉ.
+                Tôi nghe nhạc Hàn Quốc thông qua kênh truyền hình như MTV, các bài hát cứ chạy và trong tiềm thức đưa tôi biết đến các nhóm nhạc như SNSD, Big Bang, Beast, EXO, Miss A,... và đặc
+                biệt nhất là T-ara, tôi cực mê thứ âm nhạc của họ như ca khúc Roly Poly, Sexy Love, Day By Day,... Tuy nhiên thời điểm đó tôi không có hâm mộ hẳn mà chỉ có nghe nhạc thôi. Năm 2020,
+                sau khi nghe tin bạn tôi mất, tôi vô tình nghe ca khúc How You Like That của BlackPink vì bạn tôi vốn là người thích Lisa. Dần dần, tôi tự nhiên mê BlackPink qua thứ âm nhạc, sự dễ
+                thương, chương trình BlackPink House, tôi chính thức làm fan Kpop từ đó giờ. Bây giờ, tôi không chỉ mến mộ BlackPink mà tôi còn thích Twice, Iz*one, Le Sserafim và biết đến rất
+                nhiều những nhóm nhạc Kpop khác.
+            </p>
+            <p class="blockquote-footer text-light">Kpop đã trở thành niềm vui, động lực của tôi mỗi ngày - Nam Còi</p>
+        </div>
+        <h2 class="text-primary">Một số nhóm nhạc mà tôi cực kỳ mến mộ</h2>
+        <ul class="list-group list-group-numbered list-group-item-primary">
+            <li class="list-group-item">
+                <a href="https://vi.wikipedia.org/wiki/Red_Velvet_(nh%C3%B3m_nh%E1%BA%A1c)" title="Red Velvet Wikipedia" data-bs-toggle="tooltip" class="text-info">Red Velvet</a>
+                <p>
+                    Lần đầu biết đến Red Velvet vào năm 2021, tôi si mê nhóm bởi thứ âm nhạc ma mị, phong cách Nhung Đỏ cuốn hút, visual Joy và Irene đỉnh của chóp.
+                </p>
+            </li>
+            <li class="list-group-item">
+                <a href="https://vi.wikipedia.org/wiki/Twice" title="Twice Wikipedia" data-bs-toggle="tooltip" class="text-info">Twice</a>
+                <p>
+                    Lần đầu biết đến Twice vào năm 2021, tôi thích nhóm bởi phong cách nhẹ nhàng, nữ tính nhưng gợi cảm, chuẩn gu bạn gái. Mina là bias của tôi.
+                </p>
+            </li>
+            <li class="list-group-item">
+                <a href="https://vi.wikipedia.org/wiki/Iz*One" title="Iz*one Wikipedia" data-bs-toggle="tooltip" class="text-info">Iz*one</a>
+                <p>
+                    Lần đầu biết đến Twice vào năm 2023, dù nhóm tan rã nhưng tôi vẫn mê nhóm ở thời điểm hiện tại vì rất giống Twice. Tôi mê các thành viên lắm.
+                </p>
+            </li>
+            <li class="list-group-item">
+                <a href="https://vi.wikipedia.org/wiki/Blackpink" title="Black Pink Wikipedia" data-bs-toggle="tooltip" class="text-info">Black Pink</a>
+                <p>
+                    Lần đầu biết đến BlackPink vào năm 2016, tôi thích nhóm bởi phong cách nhẹ nhàng, nữ tính, âm nhạc hay. Kim Jisoo là bias của tôi.
+                </p>
+            </li>
+            <li class="list-group-item">
+                <a href="https://vi.wikipedia.org/wiki/Itzy" title="Itzy Wikipedia" data-bs-toggle="tooltip" class="text-info">Itzy</a>
+                <p>
+                    Lần đầu biết đến Twice vào năm 2019, tôi thích nhóm bởi nhìn khá dị, dù không chuẩn gu tôi lắm nhưng bướng là tôi thích. Shin Ryujin là bias của tôi.
+                </p>
+            </li>
+            <li class="list-group-item">
+                <a href="https://vi.wikipedia.org/wiki/Aespa" title="Aespa Wikipedia" data-bs-toggle="tooltip" class="text-info">Aespa</a>
+                <p>
+                    Lần đầu biết đến Twice vào năm 2020, tôi thích nhóm bởi sự quyến rũ chết người từ các thành viên, tôi mê lắm. Tất cả đều là bias của tôi.
+                </p>
+            </li>
+            <li class="list-group-item">
+                <a href="https://vi.wikipedia.org/wiki/Ive" title="IVE Wikipedia" data-bs-toggle="tooltip" class="text-info">IVE</a>
+                <p>
+                    Lần đầu biết đến Twice vào năm 2021, tôi thích nhóm bởi phong cách nhẹ nhàng, nữ tính nhưng gợi cảm, chuẩn gu bạn gái. Kim Gaeul là bias của tôi.
+                </p>
+            </li>
+            <li class="list-group-item">
+                <a href="https://vi.wikipedia.org/wiki/Le_Sserafim" title="Le Sserafim Wikipedia" data-bs-toggle="tooltip" class="text-info">Le Sserafim</a>
+                <p>
+                    Lần đầu biết đến Le Sserafim vào năm 2022, tôi thích nhóm bởi phong cách nhẹ nhàng, nữ tính nhưng gợi cảm, chuẩn gu bạn gái. Cả nhóm tôi đều thích vì là gu của tôi.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="container row mx-auto">
+        <!-- Card học tiếng Nhật -->
+        <div class="col-xl-4 card border border-2 border-success text-center p-3">
+            <img class="card-img-top rounded-circle" src="./Images/Mom.jpg" alt="Nam và Mẹ">
+            <div class="card-header">
+                <p class="card-title text-uppercase">Học tiếng Nhật</p>
+                <p class="card-text">(1/2021 - nay)</p>
+                <a href="https://dungmori.com/" class="card-link text-success">Dũng Mori</a>
+            </div>
+            <div class="card-body">
+                <p class="lead">Tiếng Nhật là ngôn ngữ khá là khó nhưng hãy chăm chỉ ắt sẽ thành công.</p>
+                <p class="lead">Sau những năm tháng học tiếng Nhật, tôi không chỉ biết được một ngôn ngữ mới mà cũng biết được những điều hay, cái đẹp của con người Nhật Bản.</p>
+            </div>
+            <div class="card-footer">
+                <p class="h3">Trình độ tiếng Nhật: N2</p>
+            </div>
+        </div>
+        <!-- Card học lập trình -->
+        <div class="col-xl-4 card border border-2 border-success text-center p-3">
+            <img class="card-img-top rounded-circle" src="./Images/Selfie.jpg" alt="Nam và Anh Hoàng">
+            <div class="card-header">
+                <p class="card-title text-uppercase">Học lập trình website</p>
+                <p class="card-text">(11/2023 - nay)</p>
+                <a href="https://fullstack.edu.vn/?_type=tab" class="card-link text-success">F8 - Nền tảng học lập trình</a>
+            </div>
+            <div class="card-body">
+                <p class="lead">Học lập trình web hay IT chưa bao giờ là dễ dàng cả, khi mà đòi hỏi sự chăm chỉ, kiên nhẫn, quyết tâm.</p>
+                <p class="lead">Sau những năm tháng học tiếng lập trình, tôi mở rộng được cái nhìn của mình, rèn ý thức kỷ luật cũng như nỗ lực hơn để làm ra những sản phẩm.</p>
+            </div>
+            <div class="card-footer">
+                <p class="h3">Lập trình Web: Fullstack</p>
+            </div>
+        </div>
+        <!-- Card làm việc tại Appen -->
+        <div class="col-xl-4 card border border-2 border-success text-center p-3">
+            <img class="card-img-top rounded-circle" src="./Images/Selfie2.jpg" alt="Nam Còi tự thủ">
+            <div class="card-header">
+                <p class="card-title text-uppercase">Làm freelancer tại Appen</p>
+                <p class="card-text">(11/2019 - nay)</p>
+                <a href="https://www.appen.com/" class="card-link text-success">Công ty Appen</a>
+            </div>
+            <div class="card-body">
+                <p class="lead">Làm một công việc từ xa tại nhà cũng rất tiện nhưng kèm với đó là lương thấp và hơi cô đơn.</p>
+                <p class="lead">Sau những năm tháng làm việc, tôi hiểu được giá trị đồng tiền, những khó khăn nhưng cũng học được cách tự rèn bản thân linh hoạt, sắp xếp thời gian.</p>
+            </div>
+            <div class="card-footer">
+                <p class="h3">Kinh nghiệm: 5 năm</p>
+            </div>
+        </div>
+    </div>
+    <!-- Một số nhóm nhạc -->
+    <div class="container-fluid border border-2 border-primary mt-5 px-4 pt-5" id="groups">
+        <h1 class="text-center text-capitalize mark">Các nhóm nhạc KPOP</h1>
+        <button class="btn btn-secondary mx-auto d-block" data-bs-trigger="focus" data-bs-toggle="popover" title="Các nhóm nhạc nữ" data-bs-content="Thế hệ Gen 3 và Gen 4 là những nhóm nhạc tiêu biểu">Các nhóm nhạc bên dưới là tôi đã làm.</button>
+        <div class="container-fluid d-flex justify-content-center flex-wrap gap-3 text-bg-dark pt-3 pb-5 px-2">
+            <a href="" class="d-block group-container mt-3 mx-3 text-decoration-none text-info display-6 text-center">
+                <img src="./Images/RedVelvet.jpg" alt="Red Velvet">
+                <p class="text-bg-light">Red Velvet</p>
+            </a>
+            <a href="" class="d-block group-container mt-3 mx-3 text-decoration-none text-info display-6 text-center">
+                <img src="./Images/Twice.jpg" alt="Twice">
+                <p class="text-bg-light">Twice</p>
+            </a>
+            <a href="" class="d-block group-container mt-3 mx-3 text-decoration-none text-info display-6 text-center">
+                <img src="./Images/BlackPink.jpg" alt="BlackPink">
+                <p class="text-bg-light">BlackPink</p>
+            </a>
+            <a href="" class="d-block group-container mt-3 mx-3 text-decoration-none text-info display-6 text-center">
+                <img src="./Images/NewJeans.jpg" alt="NewJeans">
+                <p class="text-bg-light">NewJeans</p>
+            </a>
+            <a href="" class="d-block group-container mt-3 mx-3 text-decoration-none text-info display-6 text-center">
+                <img src="./Images/Aespa.jpg" alt="Aespa">
+                <p class="text-bg-light">Aespa</p>
+            </a>
+            <a href="" class="d-block group-container mt-3 mx-3 text-decoration-none text-info display-6 text-center">
+                <img src="./Images/Itzy.jpg" alt="Itzy">
+                <p class="text-bg-light">Itzy</p>
+            </a>
+            <a href="" class="d-block group-container mt-3 mx-3 text-decoration-none text-info display-6 text-center">
+                <img src="./Images/IVE.jpg" alt="IVE">
+                <p class="text-bg-light">IVE</p>
+            </a>
+            <a href="" class="d-block group-container mt-3 mx-3 text-decoration-none text-info display-6 text-center">
+                <img src="./Images/LeSserafim2.jpg" alt="Le Sserafim">
+                <p class="text-bg-light">Le Sserafim</p>
+            </a>
+            <a href="nmixx.html" class="d-block group-container mt-3 mx-3 text-decoration-none text-info display-6 text-center">
+                <img src="./Images/Nmixx.jpg" alt="NMIXX">
+                <p class="text-bg-light">NMIXX</p>
+            </a>
+            <a href="" class="d-block group-container mt-3 mx-3 text-decoration-none text-info display-6 text-center">
+                <img src="./Images/Izone.jpg" alt="Iz*one">
+                <p class="text-bg-light">Iz*one</p>
+            </a>
+            <a href="" class="d-block group-container mt-3 mx-3 text-decoration-none text-info display-6 text-center">
+                <img src="./Images/Baemon.jpg" alt="Baemon">
+                <p class="text-bg-light">Baby Monsters</p>
+            </a>
+            <a href="" class="d-block group-container mt-3 mx-3 text-decoration-none text-info display-6 text-center">
+                <img src="./Images/StayC.jpg" alt="StayC">
+                <p class="text-bg-light">StayC</p>
+            </a>
+            <a href="" class="d-block group-container mt-3 mx-3 text-decoration-none text-info display-6 text-center">
+                <img src="./Images/(G)IDLE.jpg" alt="(G)I-DLE">
+                <p class="text-bg-light">(G)I-DLE</p>
+            </a>
+            <a href="" class="d-block group-container mt-3 mx-3 text-decoration-none text-info display-6 text-center">
+                <img src="./Images/Mamamoo.jpg" alt="Mamamoo">
+                <p class="text-bg-light">Mamamoo</p>
+            </a>
+            <a href="" class="d-block group-container mt-3 mx-3 text-decoration-none text-info display-6 text-center">
+                <img src="./Images/Gfriend.jpg" alt="Gfriend">
+                <p class="text-bg-light">GFRIEND</p>
+            </a>
+        </div>
+    </div>
+    <!-- Liên hệ -->
+    <div class="container text-bg-success p-4 rounded-5 border border-2 border-secondary mt-5" id="contact">
+        <h2 class="text-center text-uppercase">Đăng ký làm thành viên</h2>
+        <form action="">
+            <label for="name" class="form-label h5 mt-2">Tên Đăng Nhập</label>
+            <input type="text" class="form-control form-control-lg" required placeholder="KimMinju11o2">
+            <label for="email" class="form-label h5 mt-2">Địa chỉ Email</label>
+            <div class="input-group input-group-lg">
+                <input type="email" class="form-control form-control-lg" required placeholder="MinjuCute">
+                <span class="input-group-text">@gmail.com</span>
+            </div>
+            <label for="password" class="form-label h5 mt-2">Mật khẩu</label>
+            <input type="password" class="form-control form-control-lg" required placeholder="KimMinju2001">
+            <label for="number" class="form-label h5 mt-2">Số điện thoại</label>
+            <input type="tel" class="form-control form-control-lg" required placeholder="0123456789">
+            <label for="" class="form-label h5 mt-2">Giới tính</label>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="gender" id="male" checked>
+                <label for="male" class="form-check-label">Nam</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="gender" id="female">
+                <label for="female" class="form-check-label">Nữ</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="gender" id="other">
+                <label for="other" class="form-check-label">Khác (Gay, Less, Lưỡng tính,...)</label>
+            </div>
+            <label for="" class="form-label h5 mt-2">Bạn yêu thích nhóm nhạc nào?</label>
+            <select name="" id="" class="form-select form-select-lg">
+                <option value="choose" disabled>--- Chọn nhóm nhạc yêu thích của bạn ---</option>
+                <option value="redvelvet" selected>Red Velvet</option>
+                <option value="twice">Twice</option>
+                <option value="blackpink">Black Pink</option>
+                <option value="gfriend">GFRIEND</option>
+                <option value="mamamoo">Mamamoo</option>
+            </select>
+            <div class="form-floating mt-2">
+                <textarea type="text" class="form-control" name="text" id="comment" rows="5" required></textarea>
+                <label for="comment">Vài lời nhận xét về trang web này:</label>
+            </div>
+            <div class="btn-group btn-group-lg mt-2">
+                <button class="btn btn-primary me-2" type="submit">Gửi</button>
+                <button class="btn btn-danger" type="reset">Xóa</button>
+            </div>
+        </form>
+        <h2 class="mt-2">
+            Liên hệ với tôi
+            <span class="badge bg-danger rounded-pill">HOT</span>
+        </h2>
+        <a href="https://www.facebook.com/NamCrush11o2" class="btn btn-outline-light">Facebook của tôi</a>
+        <a href="tel: 0399417251" class="btn btn-outline-light">Số điện thoại</a>
+        <a href="mailto: namnguyen.nnnn54@gmail.com" class="btn btn-outline-light">Địa chỉ Email</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Script cho Tooltip
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        // Chuyển đổi giao diện sáng tối
+        const body = document.body;
+        const toggleButton = document.getElementById('themeToggle');
+        toggleButton.addEventListener('click', () => {
+            if (body.getAttribute('data-bs-theme') === 'light') {
+                body.setAttribute('data-bs-theme', 'dark');
+                toggleButton.textContent = "Light Mode";
+                toggleButton.classList.remove("btn-dark");
+                toggleButton.classList.add("btn-light");
+            } else {
+                body.setAttribute('data-bs-theme', 'light');
+                toggleButton.textContent = "Dark Mode";
+                toggleButton.classList.remove("btn-light");
+                toggleButton.classList.add("btn-dark");
+            }
+        });
+        // Popover hoạt động
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+</body>
+</html>
